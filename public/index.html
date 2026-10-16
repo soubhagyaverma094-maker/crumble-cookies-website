@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Handcrafted cookies and custom cakes made with premium ingredients. Order online for pickup or delivery.">
+  <meta name="keywords" content="cookies, cakes, bakery, handcrafted, custom cakes">
+  <meta name="author" content="Crumble Cookies">
+  <meta name="robots" content="index, follow">
+  <title>Crumble Cookies | Artisan Baked Goods & Custom Cakes</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Crumble Cookies | Artisan Baked Goods">
+  <meta property="og:description" content="Handcrafted cookies and custom cakes made with premium ingredients.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://crumblecookies.com">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crumble Cookies | Artisan Baked Goods">
+  <meta name="twitter:description" content="Handcrafted cookies and custom cakes made with premium ingredients.">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Poppins', system-ui, sans-serif; background: #fffef7; color: #4a2c20; }
+    
+    :root {
+      --primary-500: #ffed9a; --brown-500: #c9a91d; --brown-700: #a17507; --brown-900: #694703;
+      --cream-500: #ffed9a; --accent-500: #ec830d;
+    }
+    
+    .font-display { font-family: 'Playfair Display', system-ui, serif; }
+    .gradient-text { background: linear-gradient(90deg, #694703 0%, #c9a91d 50%, #d4c06e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .btn-primary { display: inline-block; padding: 1rem 2.5rem; font-size: 1rem; font-weight: 600; background: linear-gradient(90deg, #a17507 0%, #c9a91d 100%); color: white; border-radius: 9999px; transition: all 0.3s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .btn-secondary { display: inline-block; padding: 1rem 2.5rem; font-size: 1rem; font-weight: 600; background: white; color: #a17507; border: 2px solid #c9a91d; border-radius: 9999px; transition: all 0.3s; }
+    .btn-secondary:hover { background: #fffef7; }
+    .card { background: white; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e7e5b0; }
+    .section-padding { padding: 4rem 1rem; }
+    .progress-bar { position: fixed; top: 0; left: 0; width: 100%; height: 4px; background: #b3b3b3; z-index: 1000; }
+    .progress-bar-fill { height: 100%; background: linear-gradient(90deg, #a17507, #c9a91d); width: 0%; transition: width 0.1s; }
+    @media (max-width: 768px) { .section-padding { padding: 2rem 1rem; } }
+  </style>
+</head>
+<body>
+  <div class="progress-bar"><div class="progress-bar-fill"></div></div>
+  
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 shadow-sm border-b border-brown-100">
+    <nav class="max-w-7xl mx-auto h-16 flex items-center justify-between px-4">
+      <a href="#" class="flex items-center gap-3 text-xl font-bold text-brown-900">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-brown-500 to-cream-500 flex items-center justify-center text-white font-bold">C</div>
+        <span>Crumble Cookies</span>
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        <a href="#products" class="text-sm font-medium text-brown-700 hover:text-brown-900">Products</a>
+        <a href="#about" class="text-sm font-medium text-brown-700 hover:text-brown-900">About</a>
+        <a href="#testimonials" class="text-sm font-medium text-brown-700 hover:text-brown-900">Reviews</a>
+        <a href="#order" class="text-sm font-medium text-brown-700 hover:text-brown-900">Order</a>
+      </div>
+      <a href="tel:+919876543210" class="hidden md:inline-block btn-primary text-sm px-6 py-2.5">Order Now</a>
+    </nav>
+  </header>
+  
+  <section id="hero" class="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-cream-50 via-white to-brown-50">
+    <div class="max-w-3xl mx-auto text-center px-4">
+      <div class="mb-8">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brown-100 text-brown-700 text-sm font-medium">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brown-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brown-500"></span>
+          </span>
+          Artisan Baked Goods Since 2015
+        </span>
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brown-900 mb-6 font-display">
+        Handcrafted <span class="gradient-text">Cookies</span> & Custom Cakes
+      </h1>
+      <p class="text-lg text-brown-600 mb-10 max-w-2xl mx-auto">
+        Made with premium butter, real vanilla, and love in every bite. Order online for pickup or delivery.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a href="#order" class="btn-primary text-lg px-10 py-4">Order Now</a>
+        <a href="#products" class="btn-secondary text-lg px-10 py-4">See Our Menu</a>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-brown-500">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L9 14.293 4.707 10.593a1 1 0 011.414-1.414L9 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+          Free local pickup
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 15l-3.87 3.43a.75.75 0 00-.97-.15l-4.37 1.32a.75.75 0 00-.63.74v4.28a.75.75 0 00.75.75h13.5a.75.75 0 00.75-.75v-4.28a.75.75 0 00-.63-.74l-4.37-1.32a.75.75 0 01-.97.15L10 15z"/></svg>
+          Wide delivery area
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2"/><path d="M10 15a5 5 0 100-10 5 5 0 000 10z" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          Fresh daily
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section-padding bg-cream-50">
+    <div class="max-w-3xl mx-auto text-center mb-16 px-4">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-brown-100 text-brown-700 text-sm font-medium mb-4">Our Cookies</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-brown-900 mb-4 font-display">Cookie <span class="gradient-text">Collections</span></h2>
+      <p class="text-lg text-brown-600 max-w-2xl mx-auto">Freshly baked daily with premium ingredients, every cookie tells a story.</p>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card">
+        <div class="bg-brown-100 rounded-xl h-48 mb-4 flex items-center justify-center">🍪</div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-brown-900 mb-2">Classic Chocolate Chip</h3>
+          <p class="text-brown-600 mb-3">Our signature recipe with generous chocolate chunks.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-xl font-bold text-brown-900">$4.50</span>
+            <button class="w-8 h-8 rounded-full bg-brown-500 text-white">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-padding bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block px-4 py-1.5 rounded-full bg-brown-100 text-brown-700 text-sm font-medium mb-4">About Us</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-brown-900 mb-4 font-display">Since 2015, Crafting Joy One Cookie at a Time</h2>
+        <p class="text-lg text-brown-600 mb-4">Founded by Emma Rodriguez, our bakery was born from a passion for traditional baking techniques combined with innovative flavors.</p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brown-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L9 14.293 4.707 10.593a1 1 0 011.414-1.414L9 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-brown-700">All-natural ingredients from local farms</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brown-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L9 14.293 4.707 10.593a1 1 0 011.414-1.414L9 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-brown-700">No artificial preservatives</span></li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-brown-100 rounded-xl p-4 text-center"><div class="w-12 h-12 bg-brown-500 rounded-full flex items-center justify-center text-xl font-bold text-white mb-2">24</div><p class="text-sm text-brown-700">Hour ovens</p></div>
+        <div class="bg-brown-100 rounded-xl p-4 text-center"><div class="w-12 h-12 bg-brown-500 rounded-full flex items-center justify-center text-xl font-bold text-white mb-2">500</div><p class="text-sm text-brown-700">Recipes</p></div>
+        <div class="bg-brown-100 rounded-xl p-4 text-center"><div class="w-12 h-12 bg-brown-500 rounded-full flex items-center justify-center text-xl font-bold text-white mb-2">99.9%</div><p class="text-sm text-brown-700">Fresh rating</p></div>
+        <div class="bg-brown-100 rounded-xl p-4 text-center"><div class="w-12 h-12 bg-brown-500 rounded-full flex items-center justify-center text-xl font-bold text-white mb-2">5★</div><p class="text-sm text-brown-700">Rating</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="section-padding bg-gradient-to-r from-brown-600 to-brown-800 text-white">
+    <div class="max-w-3xl mx-auto text-center mb-12 px-4">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-cream-500/20 text-cream-200 text-sm font-medium mb-4">Order Now</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-display">Ready to Order Your Fresh Cookies?</h2>
+      <p class="text-lg text-cream-200 max-w-2xl mx-auto">Get your cookies baked fresh to perfection. Order online for pickup or delivery.</p>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
+      <form id="contact-form" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div><label class="block text-sm font-semibold text-brown-700 mb-2">Name</label><input type="text" required class="w-full px-4 py-3 rounded-lg border border-brown-200"></div>
+          <div><label class="block text-sm font-semibold text-brown-700 mb-2">Phone</label><input type="tel" required class="w-full px-4 py-3 rounded-lg border border-brown-200"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div><label class="block text-sm font-semibold text-brown-700 mb-2">Email</label><input type="email" required class="w-full px-4 py-3 rounded-lg border border-brown-200"></div>
+          <div><label class="block text-sm font-semibold text-brown-700 mb-2">Pick-up Time</label><select required class="w-full px-4 py-3 rounded-lg border border-brown-200 bg-white"><option value="">Select time</option><option>Morning (8-11 AM)</option><option>Afternoon (11 AM-2 PM)</option><option>Evening (2-5 PM)</option></select></div>
+        </div>
+        <div><label class="block text-sm font-semibold text-brown-700 mb-2">Message</label><textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-brown-200"></textarea></div>
+        <button type="submit" class="w-full btn-primary text-lg py-4">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-brown-900 text-cream-100 pt-12">
+    <div class="max-w-7xl mx-auto px-4 pb-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="space-y-4">
+          <a href="#" class="flex items-center gap-3 text-2xl font-bold text-white"><div class="w-10 h-10 rounded-lg bg-gradient-to-r from-cream-500 to-brown-500 flex items-center justify-center text-brown-900 font-bold">C</div><span>Crumble Cookies</span></a>
+          <p class="text-sm text-cream-200">Artisan baked goods crafted with passion since 2015.</p>
+        </div>
+        <div><h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3><ul class="space-y-2"><li><a href="#products" class="text-sm text-cream-200 hover:text-cream-100">Products</a></li><li><a href="#about" class="text-sm text-cream-200 hover:text-cream-100">About</a></li><li><a href="#testimonials" class="text-sm text-cream-200 hover:text-cream-100">Reviews</a></li><li><a href="#order" class="text-sm text-cream-200 hover:text-cream-100">Order</a></li></ul></div>
+        <div><h3 class="text-lg font-semibold text-white mb-3">Services</h3><ul class="space-y-2"><li><a href="#order" class="text-sm text-cream-200 hover:text-cream-100">Cookies</a></li><li><a href="#order" class="text-sm text-cream-200 hover:text-cream-100">Custom Cakes</a></li><li><a href="#order" class="text-sm text-cream-200 hover:text-cream-100">Special Orders</a></li><li><a href="#order" class="text-sm text-cream-200 hover:text-cream-100">Delivery</a></li></ul></div>
+        <div><h3 class="text-lg font-semibold text-white mb-3">Contact</h3><p class="text-sm text-cream-200">📞 +1 (555) 123-4567<br>📧 info@crumblecookies.com<br>📍 123 Bakery Lane, Sweetville</p></div>
+      </div>
+      <p class="mt-12 pt-8 border-t border-brown-700 text-xs text-cream-300 text-center">© 2024 Crumble Cookies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const progressBar = document.querySelector('.progress-bar-fill');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      progressBar.style.width = (scrollTop / scrollHeight) * 100 + '%';
+    });
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! Your order has been received.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
